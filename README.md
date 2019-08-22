@@ -15,3 +15,4 @@ java -cp geomesa-tutorials-cassandra/geomesa-tutorials-cassandra-quickstart/targ
 
 bin/geomesa-cassandra export --output-format leaflet --contact-point 127.0.0.1:9042 --key-space geomesa --catalog sample_table
 
+![NYC taxi tracks stored in GeoMesa](https://www.geomesa.org/img/taxi.gif)
