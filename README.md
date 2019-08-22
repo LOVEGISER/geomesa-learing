@@ -396,3 +396,28 @@ java -cp geomesa-tutorials-cassandra/geomesa-tutorials-cassandra-quickstart/targ
 
 bin/geomesa-cassandra export --output-format leaflet --contact-point 127.0.0.1:9042 --key-space geomesa --catalog sample_table
 
+## 第七部分：其他应用
+
+### 1：GeoMesa Kafka DataStore
+
+•使⽤用Kafka作为数据存储DataStore
+•通过GeoTools DataStore标准接⼝口进⾏行行访问
+
+•Consumer与Producer可以分布在不不同server
+
+ •⽀支持要素缓存，定时写⼊入kafka
+
+![page22image59289584.png](resource/kafka.png) 
+
+### 2：GeoMesa Lambda DataStore
+
+- 数据存储在两个层:transienttier(Kafka)和 a persistent tier(HBase)
+
+- 数据定时写⼊持久层
+
+- 使⽤用ZK同步数据缓存状态，保证数据一次写⼊
+
+- 进⾏行行数据查询会从两个存储层分别进⾏， 然后合并查询结果返回给⽤用户。
+
+  ![image-20190822233441989](resource/lambda.png)
+
