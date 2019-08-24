@@ -32,7 +32,9 @@
 
 ![page7image42712272.png](resource/geomesa-struct.png) 
 
-- - [6.1. GeoTools Feature Types](https://www.geomesa.org/documentation/user/datastores/attributes.html)
+- #### **接口层**
+  
+  - [6.1. GeoTools Feature Types](https://www.geomesa.org/documentation/user/datastores/attributes.html)
   - [6.2. Index Overview](https://www.geomesa.org/documentation/user/datastores/index_overview.html)
   - [6.3. Index Basics](https://www.geomesa.org/documentation/user/datastores/index_basics.html)
   - [6.4. Index Versioning](https://www.geomesa.org/documentation/user/datastores/index_basics.html#index-versioning)
@@ -45,9 +47,9 @@
   - [6.11. Analytic Querying](https://www.geomesa.org/documentation/user/datastores/analytic_queries.html)
   - [6.12. Authorizations](https://www.geomesa.org/documentation/user/datastores/authorizations.html)
   - [6.13. Query Auditing](https://www.geomesa.org/documentation/user/datastores/auditing.html)
-  - [6.14. Moving and Migrating Data](https://www.geomesa.org/documentation/user/datastores/data.html)
+- [6.14. Moving and Migrating Data](https://www.geomesa.org/documentation/user/datastores/data.html)
   - [6.15. Reserved Words](https://www.geomesa.org/documentation/user/datastores/reserved_words.html)
-
+  
 - #### 命令行
 
   <u>[Command-Line Tools](https://www.geomesa.org/documentation/user/cli/index.html)</u>
@@ -420,4 +422,3 @@ bin/geomesa-cassandra export --output-format leaflet --contact-point 127.0.0.1:9
 - 进⾏行行数据查询会从两个存储层分别进⾏， 然后合并查询结果返回给⽤用户。
 
   ![image-20190822233441989](resource/lambda.png)
-
